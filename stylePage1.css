@@ -1,0 +1,127 @@
+*{
+	padding:0;
+	margin: 0;
+	box-sizing : border-box;
+}
+
+.bodyAcceuil{
+	
+	background : #81c644;
+	background-size : cover;
+	background-position : center;
+	font-family : sans-serif;
+	
+}
+/*menu*/
+.menu-bar{
+	background : rgb(0,100,0);
+	text-align :  center; 
+}
+.menu-bar ul{
+	display : inline-flex;
+	list-style : none;
+	color : #FFF;
+}
+.menu-bar ul li {
+	width : 200px;
+	margin : 15px;
+	padding : 15px;
+}
+.menu-bar ul li a{
+	text-decoration : none;
+	color : #FFF;
+}
+.menu-bar ul li:hover{
+	background-color: #2bab0d;
+	border-radius : 3px;
+}
+.menu-bar .fa{
+	margin-right : 8px;
+	
+}
+.sub-menu-1{
+	display : none;
+}
+
+.menu-bar ul li:hover .sub-menu-1{
+	display : block;
+	position : absolute;
+	background : rgb(0,100,0);
+	margin-top : 15px;
+	margin-left : -15px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul{
+	display : block;
+	margin : 10px;
+	
+}
+.menu-bar ul li:hover .sub-menu-1 ul li{
+	width : 150px;
+	padding : 10px;
+border-bottom : 1px dotted #FFF;
+background : transparent;
+border-radius : 0;
+text-align : left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+	border-bottom : none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+	color : #b2ff00;
+}
+/* mot directur*/
+
+.bodyMotDirecteur{
+	background : #81c644;
+	background-size : cover;
+	background-position : center;
+
+	font-family : sans-serif;
+}
+.box{
+	position : absolute;
+	top : 67%;
+	left : 50%;
+	transform : translate(-50%, -50%);
+
+	padding : 70px;
+	box-sizing : border-box;
+	background-image : url("white.jpg");
+	border-radius : 4px;
+	box-shadow : 0 5px 15px rgba(0,0,0,.5);
+	display : flex;
+	transition : .5s;
+}
+.box:hover{
+	box-shadow : 0 15px 30px rgba(0,0,0,.5);
+}
+.box .imgbox{
+	width : 150px;
+	flex : 0 0 150px;
+}
+.box .imgbox img{
+	max-width : 100%;
+}
+.box .content{
+	padding-left : 20px;
+}
+.box .content h2{
+	margin : 0;
+	padding-left : 0;
+	color : #B59A7B;
+	font-size : 30px;
+	text-decoration : underline;
+}
+.box .content p{
+	margin : 0;
+	padding : 25px 0 0;
+	text-align : justify;
+	font-family : arial;
+	
+	
+}
+
+
+
+
